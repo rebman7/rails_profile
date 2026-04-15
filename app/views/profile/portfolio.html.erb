@@ -1,0 +1,86 @@
+<%#
+<h1>Profile#portfolio</h1>
+<p>Find me in app/views/profile/portfolio.html.erb</p>
+%>
+
+<%# this file holds the html for the portfolio page %>
+
+<div class="container my-5 text-center">
+  <h1>My Portfolio</h1>
+  <p class="lead">A selection of my academic projects</p>
+</div>
+
+<div class="container">
+  <div class="row g-4 align-items-stretch">
+
+    <!-- Project 1 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100">
+        <%= image_tag "summerInternship2025.png", class: "card-img-top img-fluid", alt: "summerInternship" %>
+
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">
+            <i class="fas fa-code me-2"></i>
+            Cultivating Health: Community Food Gardens in Cochabamba, Bolivia
+          </h5>
+
+          <p class="card-text">
+            This is a poster I presented earlier this fall highlighting the work I did during my Summer 2025 internship in Cochabamba, Bolivia. I worked with a nonprofit organization to combat food insecurity through building and maintaining food gardens.
+          </p>
+
+          <%= link_to "View Poster", "/assets/MannaRebecca-FallWeekend2025.pptx.pdf", class: "btn btn-primary btn-sm mt-auto" %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100">
+        <%= image_tag "symposiumPresentation.png", class: "card-img-top img-fluid", alt: "symposiumPresentation" %>
+
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">
+            <i class="fas fa-code me-2"></i>
+            Interacting Systems: Access and Disparities in Healthcare
+          </h5>
+
+          <p class="card-text">
+            Slides from my Public Health Pathway presentation about the interdisciplinary nature of health and healthcare access.
+          </p>
+
+          <%= link_to "View Presentation", "/assets/RebeccaMannaSymposium25Powerpoint.pptx.pdf", class: "btn btn-primary btn-sm mt-auto" %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100">
+        <%= image_tag "researchCogNeuro.png", class: "card-img-top img-fluid", alt: "researchCogNeuro" %>
+
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">
+            <i class="fas fa-code me-2"></i>
+            Music as a Potential Distractor: Does Language Comprehension of Music Affect Reading Comprehension?
+          </h5>
+
+          <p class="card-text">
+            A research paper from my cognitive neuroscience course examining whether music impacts reading comprehension.
+          </p>
+
+          <%= link_to "View Paper", "/assets/Rebecca_Manna_NEU312_Final_Paper.pdf", class: "btn btn-primary btn-sm mt-auto" %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer text-center mt-4">
+  <div class="container">
+    <span class="text-muted">
+      Thanks for visiting my page. Come Again Soon.
+    </span>
+    <i class="far fa-copyright"></i>
+  </div>
+</footer>
