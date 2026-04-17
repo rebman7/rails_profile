@@ -1,50 +1,58 @@
 /*
- * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
+ * This is a manifest file that'll be compiled into application.scss.
  */
 
-/* imports bootsrap and FontAwesome + allows us to utilize both for styling */
 
+/* imports bootstrap and FontAwesome + allows us to utilize both for styling */
 
 @import "bootstrap";
 @import "font-awesome";
 
-/* custom CSS rules *?
+/* custom CSS rules */
 
-/* adds background bluish color to page */
+/* adds background light bluish color to page; makes cards stand out form background */
 body {
-	background-color: #f4f6f8;
+	background-color: #dceaf7;
 }
 
-/* custom header styling */
+/* custom header styling; makes bold and strong blue*/
 h1 {
-	color: #2c3e50;
+	color: #0f80f2;
 	font-weight: bold;
 }
 
-/* hightlight section */
+/* hightlight section in cream color */
 .highlight-section {
-	background-color: #ffffff;
+	background-color: #fffdd0;		
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
 }
 
-/* image styling */
-.profile-mg {
-	border-radius: 50%;
-	border: 3px solid #6c757d;
-	width: 200px;
-}
-
-/* card hover effect */
+/* card mouse hover effect */
 .card:hover {
 	transform: scale(1.03);
 	transition: 0.3s;
+}
+
+/* creates underline effect when mouse hovers over title of pages on navbar */
+.navbar .nav-link {
+  position: relative;
+  color: white;					/* color of text is white */
+  margin-left: 10px;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #0f80f2;	/* makes underline bright blue */
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
 }

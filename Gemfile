@@ -22,7 +22,6 @@ gem "jbuilder"
 gem 'bootstrap', '~> 5.3.8'
 #Added a Sass engine
 gem "sassc-rails"
-#gem "dartsass-rails"
 
 #FontAwesome
 gem "font-awesome-sass"
